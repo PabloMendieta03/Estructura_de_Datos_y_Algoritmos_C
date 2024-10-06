@@ -1,10 +1,10 @@
 /*
 ==============================================================================
-PR¡CTICA: 1
+PR√ÅCTICA: 1
 EJERCICIO: 1
-ALUMNOS: Carmen Gallardo,Pablo Mendieta y Miguel ¡ngel Rojo.
-⁄LTIMA REVISI”N: 14/10/2022 - 12:31:28
-RESUMEN/ENUNCIADO: Men˙ con diversas opciones para leer y editar un fichero
+ALUMNOS: Carmen Gallardo,Pablo Mendieta y Miguel √Ångel Rojo.
+√öLTIMA REVISI√ìN: 14/10/2022 - 12:31:28
+RESUMEN/ENUNCIADO: Men√∫ con diversas opciones para leer y editar un fichero
 =============================================================================
 */
 
@@ -34,7 +34,7 @@ int EscribirFichero(char NomFichero[], tUsuario *e, int *Usuarios);
 int EliminarLinea(tUsuario **e, int NumLinea, int *Usuarios);
 int MostrarDatosDeUsuario(tUsuario **e, int *Usuarios);
 
-/*--- ImplementaciÛn de las funciones ---*/
+/*--- Implementaci√≥n de las funciones ---*/
 void MostrarFichero(tUsuario *e, int *Usuarios, int *MayorLen) {
 	int i, j, k, huecos;
 	//Creamos una tabla para mostrar los datos del fichero:
@@ -98,8 +98,8 @@ int LeerFicheroE (char NomFichero[], tUsuario **e, int *Usuarios) {
     	//Volvemos al principio del fichero
 		rewind(pfich);
 
-		//Guardamos en nuestro struct los datos del fichero en memoria din·mica:
-		(*e) = (tUsuario *) calloc(*Usuarios, sizeof(tUsuario)); //Creamos un vector de tamaÒo Usuarios
+		//Guardamos en nuestro struct los datos del fichero en memoria din√°mica:
+		(*e) = (tUsuario *) calloc(*Usuarios, sizeof(tUsuario)); //Creamos un vector de tama√±o Usuarios
 
 	    i = 0;
 		printf("\n'LeerFicheroE' - Estos son los usuarios del fichero leido:\n");
@@ -247,7 +247,7 @@ int main(){
 	//Cambiamos el color de la consola
 	system("color F0");
 
-	//Creamos un men˙ con las diferentes opciones.
+	//Creamos un men√∫ con las diferentes opciones.
     do {
 		printf("\n\n\tMENU DEL PROGRAMA: \n\t1.Leer informacion de entrada\n\t2.Eliminar linea\n\t3.Mostrar linea\n"
 		"\t4.Mostrar datos de usuario\n\t5.Salir del programa");
@@ -257,12 +257,12 @@ int main(){
     	scanf("%d%c",&n, &enter);
     	switch(n){
 	        case 1:
-				//Leer informaciÛn de entrada.
+				//Leer informaci√≥n de entrada.
         		system("title PR1_P2: Lectura del fichero");
 				printf("\nLeyendo la informacion del fichero...\n");
 				FicheroLeido = LeerFicheroE(NOMFICHERO, listaUsuarios, &nUsuarios);
 				break;
-	        case 2://Eliminar lÌnea.
+	        case 2://Eliminar l√≠nea.
         		system("title PR1_P2: Eliminar linea");
 				if(FicheroLeido){
 					printf("\nIntroduzca el numero de linea que desea eliminar: ");
@@ -289,7 +289,7 @@ int main(){
             		printf("\nError - no se ha leido aun el fichero.\nLealo antes de eliminar una linea.\n");
 				}
 				break;
-	        case 3: //Mostrar lÌnea.
+	        case 3: //Mostrar l√≠nea.
 				system("title PR1_P2: Mostrar linea");
 	        	if(FicheroLeido){
 					printf("\nIntroduzca el numero de linea que desea leer: ");
